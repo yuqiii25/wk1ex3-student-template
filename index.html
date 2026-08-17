@@ -30,7 +30,7 @@
       -->
     <h1>Demo: Get Started Debugging JavaScript with Chrome DevTools</h1>
     <label for="num1">Number 1</label>
-    <input type="text" placeholder="Number 1" id="num1">
+    <input type="text" placeholder="Number 1" id="num1"> <!--allow user to type abc and show error msg-->
     <label for="num2">Number 2</label>
     <input type="text" placeholder="Number 2" id="num2">
     <button onclick="addNumbers()">Add Number 1 and Number 2</button>
@@ -43,8 +43,8 @@
             const val1 = Number(num1);
             const val2 = Number(num2);
 
-            if (num1.trim() === "" || num2.trim() === "" || isNaN(val1) || isNaN(val2)){
-                console.log("Please enter numbers only");
+            if (num1.trim() === "" || num2.trim() === "" || isNaN(val1) || isNaN(val2)){ //check for empty input and if its a Number
+                console.log("Please enter numbers only"); 
             } else{
                 console.log(val1+val2);
             }
